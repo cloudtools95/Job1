@@ -1,0 +1,5 @@
+---
+- hosts: webservers
+  tasks:
+	-name: install a http package on agent under webservers group
+	yum: name= httpd status= installed
